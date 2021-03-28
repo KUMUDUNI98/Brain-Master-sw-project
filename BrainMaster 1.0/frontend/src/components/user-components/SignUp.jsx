@@ -165,11 +165,12 @@ class SignUp extends Component {
                     {/* Mobile No */}
                     <div className="form-gp">
                       <input
-                        type="text"
+                        type="number"
                         id="exampleInputMobile"
                         placeholder="Mobile Number"
                         onChange={(event) => {
                           this.setState({ mobile_no: event.target.value });
+                          console.log(this.state.mobile_no);
                         }}
                         value={this.state.mobile_no}
                       />
